@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<types:mule xmlns:types="http://www.mulesoft.org/schema/mule/types">
+  <types:catalog>
+    <types:type name="response" format="json">
+      <types:shape format="weave" example="examples/select-user-final-response.json"><![CDATA[%dw 2.0
+type response = {|
+  users: Array<{|
+    username: String, 
+    fullname: String, 
+    birthday: String, 
+    currentDate: String, 
+    age: Number {"typeId": "int"}, 
+    gender: String, 
+    dateRegistered: String
+  |}>
+|} {"MetadataFormat": "json",
+"example": "{\"users\":[{\"username\":\"teki\",\"fullname\":\"aileen tecson\",\"birthday\":\"1987-01-04\",\"currentDate\":\"2019-02-22\",\"age\":32,\"gender\":\"Female\",\"dateRegistered\":\"2019-01-04T09:42:21\"},{\"username\":\"paul\",\"fullname\":\"paul macalindong\",\"birthday\":\"1975-10-10\",\"currentDate\":\"2019-02-22\",\"age\":43,\"gender\":\"Male\",\"dateRegistered\":\"2019-01-04T09:42:51\"},{\"username\":\"bryan\",\"fullname\":\"bryan ruiz\",\"birthday\":\"1973-12-12\",\"currentDate\":\"2019-02-22\",\"age\":45,\"gender\":\"Male\",\"dateRegistered\":\"2019-01-04T09:43:18\"}]}"}
+
+]]></types:shape>
+    </types:type>
+    <types:type name="no-data-error" format="json">
+      <types:shape format="weave" example="api/examples/error.json"><![CDATA[%dw 2.0
+type no_data_error = {|
+  message: String, 
+  errorCode: Number {"typeId": "int"}
+|} {"MetadataFormat": "json",
+"example": "{\"message\":\"system error\",\"errorCode\":500}"}
+
+]]></types:shape>
+    </types:type>
+  </types:catalog>
+  <types:enrichment select="#cc4f46c9-eb51-4497-b6cc-07cdae2bbe64"/>
+  <types:enrichment select="#fb152ed1-ed78-41f9-9f6e-0c96d5597379"/>
+  <types:enrichment select="#65c151d8-cd11-4efb-b0f6-fc52ee035177"/>
+  <types:enrichment select="#8b4044bd-aee8-4c0f-9d53-75cf16781058"/>
+  <types:enrichment select="#6d2eccc1-0040-43e3-867e-1f6d638d06b4"/>
+  <types:enrichment select="#aa469cd6-ebe7-42e0-be7f-ddd7e60202c1"/>
+  <types:enrichment select="#60db35a6-5049-4665-9107-171a62444250">
+    <types:processor-declaration>
+      <types:input-event>
+        <types:message>
+          <types:payload type="no-data-error"/>
+        </types:message>
+      </types:input-event>
+    </types:processor-declaration>
+  </types:enrichment>
+</types:mule>

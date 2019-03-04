@@ -1,0 +1,31 @@
+{
+  "users": [
+    {
+      "username": "teki",
+      "fullname": "aileen tecson",
+      "birthday": "1987-01-04",
+      "currentDate": "2019-02-22",
+      "age": 32,
+      "gender": "Female",
+      "dateRegistered": "2019-01-04T09:42:21"
+    },
+    {
+      "username": "paul",
+      "fullname": "paul macalindong",
+      "birthday": "1975-10-10",
+      "currentDate": "2019-02-22",
+      "age": 43,
+      "gender": "Male",
+      "dateRegistered": "2019-01-04T09:42:51"
+    },
+    {
+      "username": "bryan",
+      "fullname": "bryan ruiz",
+      "birthday": "1973-12-12",
+      "currentDate": "2019-02-22",
+      "age": 45,
+      "gender": "Male",
+      "dateRegistered": "2019-01-04T09:43:18"
+    }
+  ]
+}

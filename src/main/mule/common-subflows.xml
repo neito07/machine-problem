@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:file="http://www.mulesoft.org/schema/mule/file"
+	xmlns:ee="http://www.mulesoft.org/schema/mule/ee/core" xmlns:validation="http://www.mulesoft.org/schema/mule/validation"
+	xmlns:db="http://www.mulesoft.org/schema/mule/db"
+	xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="
+http://www.mulesoft.org/schema/mule/file http://www.mulesoft.org/schema/mule/file/current/mule-file.xsd http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/db http://www.mulesoft.org/schema/mule/db/current/mule-db.xsd
+http://www.mulesoft.org/schema/mule/validation http://www.mulesoft.org/schema/mule/validation/current/mule-validation.xsd
+http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/ee/core/current/mule-ee.xsd">
+	<validation:config name="Validation_Config" doc:name="Validation Config" doc:id="e9ee288d-e935-4f6b-bce7-2fb93b9c5640"/>
+	<sub-flow name="sf-select-all-users" doc:id="18ebe9ea-a1a9-44c3-a96a-8777c80bf64e" >
+		<flow-ref doc:name="cf-start-log" doc:id="cfd548d0-af60-42eb-adc4-c275b887a173" name="cf-start-log"/>
+		<db:select doc:name="Select" doc:id="086707a5-df63-4e78-97cb-3b5b31e2ec8c" config-ref="db-config">
+			<db:sql >SELECT ut.id, ut.user_id, ut.user_name, ut.full_name, ut.birthday, ut.gender, at.active, at.date_registered 
+FROM user_table as ut join account_table as at on ut.user_id = at.user_id 
+WHERE at.active = true;</db:sql>
+			<db:parameter-types />
+		</db:select>
+		<flow-ref doc:name="cf-end-log" doc:id="7635faee-9219-4c1a-9058-fb05bd57a9ef" name="cf-end-log"/>
+	</sub-flow>
+	<sub-flow name="sf-select-user" doc:id="517df7a2-cd24-46d2-8fa1-859ccb45115b" >
+		<flow-ref doc:name="cf-start-log" doc:id="12ed4aec-b1cd-4681-900e-02e0c6901dcb" name="cf-start-log"/>
+		<db:select doc:name="Select" doc:id="1e17f4b7-e7f7-49dc-a1d1-4641f1a861a7" config-ref="db-config">
+			<db:sql >SELECT *
+FROM user_table  
+WHERE user_name = :username</db:sql>
+			<db:parameter-types >
+			</db:parameter-types>
+			<db:input-parameters ><![CDATA[#[username: attributes.uriParams.username]]]></db:input-parameters>
+		</db:select>
+		<flow-ref doc:name="cf-end-log" doc:id="07f50b41-7079-4f36-b866-c1b37aae54f6" name="cf-end-log"/>
+	</sub-flow>
+	<sub-flow name="sf-select-account" doc:id="43d91b84-f4ee-4b3e-a66f-bbedc95195e4" >
+		<flow-ref doc:name="cf-start-log" doc:id="6e881693-f979-41fe-80b3-a3f237c43cfa" name="cf-start-log"/>
+		<db:select doc:name="Select" doc:id="92837a8b-ef96-40d0-a51c-1de6d30dd10b" config-ref="db-config">
+			<db:sql >SELECT ut.id, ut.user_id, ut.user_name, ut.full_name, ut.birthday, ut.gender, at.active, at.date_registered 
+FROM user_table as ut join account_table as at on ut.user_id = at.user_id 
+WHERE at.active = true and ut.user_name = :username</db:sql>
+			<db:input-parameters ><![CDATA[#[username: vars.userName[0]]]]></db:input-parameters>
+		</db:select>
+		<flow-ref doc:name="cf-end-log" doc:id="1b0a20c2-cb53-4073-b155-cd93fbd08d94" name="cf-end-log"/>
+	</sub-flow>
+	<sub-flow name="cf-start-log" doc:id="7adc4593-837e-4453-afed-af39be488683" >
+		<logger level="INFO" doc:name="Logger" doc:id="b29b603d-87ce-4b07-8733-615a2d266d96" message="Before the executing a processor."/>
+	</sub-flow>
+	<sub-flow name="cf-end-log" doc:id="56743748-c3c8-4552-b037-c0856273b07c" >
+		<logger level="INFO" doc:name="Logger" doc:id="95eaa40a-abfd-4e12-9b4b-3d643482da76" message="After processor execution."/>
+	</sub-flow>
+	<sub-flow name="cf-header-validation" doc:id="2fbcd559-d51b-4b98-acca-0429f5a306a4" >
+		<validation:is-true doc:name="Check if header is valid" doc:id="936a6bc9-30fe-4d4d-a69c-2f7a614cd006" config-ref="Validation_Config" expression='#["j32io33ise4k2qq1" == attributes.headers.headerid]' message="Invalid header id." />
+	</sub-flow>
+	<sub-flow name="cf-write-file" doc:id="03e667b8-ae43-48ca-ac2f-23b0e67fcff5">
+		<ee:transform doc:name="Transform Message" doc:id="cc4f46c9-eb51-4497-b6cc-07cdae2bbe64" >
+			<ee:message >
+			</ee:message>
+			<ee:variables >
+				<ee:set-variable resource="dwScripts/common/dwFileNamePath.dwl" variableName="filePathName" />
+			</ee:variables>
+		</ee:transform>
+		<file:write doc:name="Write" doc:id="463e0062-f77b-489f-9b11-6c30a1ae0ca7" config-ref="file-config" path="#[vars.filePathName]" mode="APPEND">
+			<file:content ><![CDATA[#[output text/plain
+---
+"Response: \nTimeStamp: " ++ (now() as String) ++ "\n\n" ++ write(payload, "application/json") ++ "\n\n ----------------- \n\n"]]]></file:content>
+		</file:write>
+		
+	</sub-flow>
+</mule>

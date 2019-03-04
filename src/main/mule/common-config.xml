@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:tls="http://www.mulesoft.org/schema/mule/tls"
+	xmlns:file="http://www.mulesoft.org/schema/mule/file" xmlns:http="http://www.mulesoft.org/schema/mule/http"
+	xmlns:db="http://www.mulesoft.org/schema/mule/db"
+	xmlns:email="http://www.mulesoft.org/schema/mule/email" xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="
+http://www.mulesoft.org/schema/mule/tls http://www.mulesoft.org/schema/mule/tls/current/mule-tls.xsd http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/email http://www.mulesoft.org/schema/mule/email/current/mule-email.xsd
+http://www.mulesoft.org/schema/mule/db http://www.mulesoft.org/schema/mule/db/current/mule-db.xsd
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd
+http://www.mulesoft.org/schema/mule/file http://www.mulesoft.org/schema/mule/file/current/mule-file.xsd">
+	<email:smtp-config name="email-config" doc:name="Email SMTP" doc:id="34461370-cdc6-414d-95e4-db9373f2b104" >
+		<email:smtp-connection host="${smtp.host}" port="${smtp.port}" user="${smtp.user}" password="${smtp.password}" >
+			<email:properties >
+				<email:property key="mail.smtp.starttls.enable" value="true" />
+			</email:properties>
+		</email:smtp-connection>	
+	</email:smtp-config>
+	<db:config name="db-config" doc:name="Database Config" doc:id="8e1e6815-e026-4cc9-baf4-74bbd72b3bd2" >
+		<db:my-sql-connection host="${db.host}" port="${db.port}" user="${db.user}" password="${db.password}" database="${db.database}" >
+			<db:connection-properties >
+				<db:connection-property key="useSSL" value="true" />
+			</db:connection-properties>
+		</db:my-sql-connection>
+	</db:config>
+	<configuration-properties doc:name="Configuration properties" doc:id="2ba8dcdc-6f91-4cd1-993c-66484b05127e" file="config/configuration.yaml" />
+	<http:listener-config name="listener-config" doc:name="HTTP Listener config" doc:id="ed33fc54-645f-41f5-92b7-902b71cc4809">
+		<http:listener-connection host="${httplistener.host}" port="${httplistener.port}" />
+	</http:listener-config>
+	<file:config name="file-config" doc:name="File Config" doc:id="9b7cf400-eafd-4ab7-9bfb-6be0adaefdaf" >
+		<file:connection workingDir="/Users/jamo/mule4/workspace/machine-problem/machine-problem/src/main/resources/file-output" />
+	</file:config>
+<!-- 	<global-property doc:name="Global Property" doc:id="cc7c127c-fbb0-4f4f-bcc0-6219b9cb78fd" name="smtp.recipient" value="jamo@deloitte.com" /> -->
+</mule>

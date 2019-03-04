@@ -1,0 +1,18 @@
+db:
+  host: "localhost"
+  port: "8889"
+  user: "root"
+  password: "root"
+  database: "machine_problem"
+  
+smtp:
+  host: "smtp.gmail.com"
+  port: "587"
+  user: "<mailer_email>"
+  password: "<mailer_password>"
+  recipient: "<recipient_mail>"
+  
+httplistener:
+  host: "localhost"
+  port: "8084"
+  

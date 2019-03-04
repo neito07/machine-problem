@@ -1,0 +1,24 @@
+#%RAML 1.0 ResourceType
+
+get?:
+  responses:
+    400:
+      body:
+        application/json:
+          type: <<error-schema>>
+          example: <<error-example>>
+    401:
+      body:
+        application/json:
+          type: <<error-schema>>
+          example: <<error-example>>
+    404:
+      body:
+        application/json:
+          type: <<error-schema>>
+          example: <<error-example>>
+    500:
+      body:
+        application/json:
+          type: <<error-schema>>
+          example: <<error-example>>

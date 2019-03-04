@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:file="http://www.mulesoft.org/schema/mule/file" xmlns:ee="http://www.mulesoft.org/schema/mule/ee/core"
+	xmlns:db="http://www.mulesoft.org/schema/mule/db"
+	xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/db http://www.mulesoft.org/schema/mule/db/current/mule-db.xsd
+http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/ee/core/current/mule-ee.xsd
+http://www.mulesoft.org/schema/mule/file http://www.mulesoft.org/schema/mule/file/current/mule-file.xsd">
+	
+	
+	<sub-flow name="sf-get-users" doc:id="b0e66f82-8578-4511-b842-ced9acc23e01" >
+		<flow-ref doc:name="sf-select-all-users" doc:id="3ccfc1ca-1bd6-4051-a65b-f539bcaa9eba" name="sf-select-all-users" />
+		<choice doc:name="Choice" doc:id="7b97d9b7-8075-48aa-9989-13c6986bd124" >
+			<when expression="#[payload != null and sizeOf(payload) &gt;= 1]">
+				<ee:transform doc:name="Transform Message" doc:id="8b4044bd-aee8-4c0f-9d53-75cf16781058">
+			<ee:message>
+				<ee:set-payload resource="dwScripts/users/dwTransformFinalPayload.dwl" />
+			</ee:message>
+					<ee:variables >
+						<ee:set-variable variableName="httpStatus" ><![CDATA[200]]></ee:set-variable>
+					</ee:variables>
+		</ee:transform>
+			</when>
+			<otherwise >
+				<ee:transform doc:name="Transform Message" doc:id="6d2eccc1-0040-43e3-867e-1f6d638d06b4">
+						<ee:message>
+							<ee:set-payload><![CDATA[%dw 2.0
+output application/json
+---
+{
+	"message": "User not found!",
+	"errorCode": 400
+}]]></ee:set-payload>
+						</ee:message>
+					<ee:variables >
+						<ee:set-variable variableName="httpStatus" ><![CDATA[400]]></ee:set-variable>
+					</ee:variables>
+					</ee:transform>
+<!-- 				<set-variable value="400" doc:name="Set Variable" doc:id="5d0a475e-0a82-479f-9517-0a19750812c3" variableName="httpStatus"/> -->
+			</otherwise>
+		</choice>
+		<flow-ref doc:name="cf-write-file" doc:id="6520b158-4ff1-465d-950f-8447a9c63054" name="cf-write-file"/>
+	</sub-flow>
+</mule>

@@ -1,0 +1,25 @@
+{
+  "users": [
+    {
+      "username": "teki",
+      "fullname": "aileen tecson",
+      "age": 32,
+      "gender": "Female",
+      "dateRegistered": "2019-01-04T09:42:21"
+    },
+    {
+      "username": "paul",
+      "fullname": "paul macalindong",
+      "age": 43,
+      "gender": "Male",
+      "dateRegistered": "2019-01-04T09:42:51"
+    },
+    {
+      "username": "bryan",
+      "fullname": "bryan ruiz",
+      "age": 45,
+      "gender": "Male",
+      "dateRegistered": "2019-01-04T09:43:18"
+    }
+  ]
+}

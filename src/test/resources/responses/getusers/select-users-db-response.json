@@ -1,0 +1,32 @@
+[
+   {
+      "gender":"F",
+      "active":"true",
+      "user_id":"teki",
+      "user_name":"teki",
+      "date_registered":"2019-01-04T09:42:21",
+      "full_name":"aileen tecson",
+      "id":1,
+      "birthday":"1987-01-04T00:00:00"
+   },
+   {
+      "gender":"M",
+      "active":"true",
+      "user_id":"paul",
+      "user_name":"paul",
+      "date_registered":"2019-01-04T09:42:51",
+      "full_name":"paul macalindong",
+      "id":2,
+      "birthday":"1975-10-10T00:00:00"
+   },
+   {
+      "gender":"M",
+      "active":"true",
+      "user_id":"bryan",
+      "user_name":"bryan",
+      "date_registered":"2019-01-04T09:43:18",
+      "full_name":"bryan ruiz",
+      "id":3,
+      "birthday":"1973-12-12T00:00:00"
+   }
+]

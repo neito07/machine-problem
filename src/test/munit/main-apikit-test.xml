@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mule xmlns:ee="http://www.mulesoft.org/schema/mule/ee/core" xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation" xmlns:http="http://www.mulesoft.org/schema/mule/http" xmlns:munit="http://www.mulesoft.org/schema/mule/munit" xmlns:munit-tools="http://www.mulesoft.org/schema/mule/munit-tools" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd http://www.mulesoft.org/schema/mule/munit http://www.mulesoft.org/schema/mule/munit/current/mule-munit.xsd http://www.mulesoft.org/schema/mule/munit-tools http://www.mulesoft.org/schema/mule/munit-tools/current/mule-munit-tools.xsd 
+http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/ee/core/current/mule-ee.xsd">
+    <munit:config name="main-apikit-test.xml" />
+    <configuration-properties doc:name="Configuration properties" doc:id="c8532461-eb38-4767-99a0-93d26adb1b4b" file="config/configuration.yaml"/>
+    <http:request-config name="HTTP_Request_Configuration" basePath="/api">
+        <http:request-connection host="localhost" port="8084" />
+    </http:request-config>
+	<munit:test name="get:\users:main-config-200-application\json-FlowTest" description="Verifying functionality of [get:\users:main-config-200-application\json]">
+        <munit:enable-flow-sources>
+            <munit:enable-flow-source value="main-main" />
+            <munit:enable-flow-source value="get:\users:main-config" />
+        </munit:enable-flow-sources>
+        <munit:behavior >
+			<munit-tools:mock-when doc:name="Mock when" doc:id="2fab70ea-b4f4-4a0d-abbc-7e3e985e8de7" processor="db:select">
+				<munit-tools:with-attributes >
+					<munit-tools:with-attribute attributeName="doc:id" whereValue="086707a5-df63-4e78-97cb-3b5b31e2ec8c" />
+				</munit-tools:with-attributes>
+				<munit-tools:then-return >
+					<munit-tools:payload value='#[readUrl("classpath://responses/getusers/select-users-db-response.json", "application/json")]'/>
+				</munit-tools:then-return>
+			</munit-tools:mock-when>
+		</munit:behavior>
+		<munit:execution>
+            <http:request config-ref="HTTP_Request_Configuration" method="GET" path="/users">
+                <http:headers><![CDATA[#[output application/java
+---
+{
+	"Accept" : "application/json",
+	"headerId" : "j32io33ise4k2qq1"
+}]]]></http:headers>
+            </http:request>
+        </munit:execution>
+        <munit:validation>
+            <munit-tools:assert-that expression="#[attributes.statusCode]" is="#[MunitTools::equalTo(200)]" message="The HTTP Status code is not correct!" doc:name="Assert That Status Code is 200" />
+			<munit-tools:assert-that doc:name="Assert that first element is equal." doc:id="15a8d86f-ac01-46e6-abbe-19cb100ae955" expression="#[payload.users[0].username]" is='#[MunitTools::equalTo("teki")]' message="Username list doesn not match."/>
+			<munit-tools:assert-that doc:name="Assert that payload and response are equal." doc:id="dfe3fdc6-0e95-496b-b87a-a87bc165501b" expression="#[payload]" is='#[MunitTools::equalTo(readUrl("classpath://responses/getusers/select-users-final-response.json"))]'/>
+        </munit:validation>
+    </munit:test>
+	
+	<munit:test name="get:\users:main-config-400-application\json-FlowTest" description="Verifying functionality of [get:\users:main-config-400-application\json]">
+		<munit:behavior >
+			<munit-tools:mock-when doc:name="Mock when" doc:id="3a28e606-96d2-4a0a-8bda-97bd5aaf4488" processor="db:select">
+				<munit-tools:with-attributes >
+					<munit-tools:with-attribute attributeName="doc:id" whereValue="086707a5-df63-4e78-97cb-3b5b31e2ec8c" />
+				</munit-tools:with-attributes>
+				<munit-tools:then-return >
+					<munit-tools:payload value="#[null]" mediaType="application/java"/>
+				</munit-tools:then-return>
+			</munit-tools:mock-when>
+		</munit:behavior>
+		<munit:execution >
+			<http:request method="GET" doc:name="Request" doc:id="0efe5978-5deb-4694-910f-8b996b239a08" config-ref="HTTP_Request_Configuration" path="/users">
+				<http:headers ><![CDATA[#[output application/java
+---
+{
+	"headerId" : "j32io33ise4k2qq1"
+}]]]></http:headers>
+				<http:response-validator >
+					<http:success-status-code-validator values="200..500" />
+				</http:response-validator>
+			</http:request>
+		</munit:execution>
+		<munit:validation >
+			<munit-tools:assert-that doc:name="Assert that" doc:id="5d8af17f-b13e-41f0-979b-95ee63d8aa65" expression="#[attributes.statusCode]" is="#[MunitTools::equalTo(400)]" message="Not equivalent status codes"/>
+			<munit-tools:assert-that doc:name="Assert that" doc:id="8f9ae5ee-0a5e-4445-abda-1246313a1ae8" expression="#[payload]" is="#[MunitTools::notNullValue()]" />
+			<munit-tools:assert-that doc:name="Assert that" doc:id="48a3045f-520f-47f6-8736-daf742231d19" expression="#[payload]" is='#[MunitTools::equalTo(readUrl("classpath://responses/getusers/select-users-error.json"))]'/>
+		</munit:validation>
+	
+	</munit:test>
+	
+	<munit:test name="get:\users:main-config-400-invalid-header-application\json-FlowTest" description="Verifying functionality of [get:\users:main-config-400-invalid-header-application\json]">
+		<munit:behavior >
+			<munit-tools:mock-when doc:name="Mock when" doc:id="88682910-876d-4f6e-abe0-bf188d5bc4de" processor="db:select">
+				<munit-tools:with-attributes >
+					<munit-tools:with-attribute attributeName="doc:id" whereValue="086707a5-df63-4e78-97cb-3b5b31e2ec8c" />
+				</munit-tools:with-attributes>
+				<munit-tools:then-return >
+					<munit-tools:payload value="#[null]" mediaType="application/java"/>
+				</munit-tools:then-return>
+			</munit-tools:mock-when>
+		</munit:behavior>
+		<munit:execution >
+			<http:request method="GET" doc:name="Request" doc:id="c66f667c-4bef-4977-87b4-bcc68b8b2f4b" config-ref="HTTP_Request_Configuration" path="/users">
+				<http:headers ><![CDATA[#[output application/java
+---
+{
+	"headerId" : "j32io33ise4k2qq12"
+}]]]></http:headers>
+				<http:response-validator >
+					<http:success-status-code-validator values="200..500" />
+				</http:response-validator>
+			</http:request>
+		</munit:execution>
+		<munit:validation >
+			<munit-tools:assert-that doc:name="Assert that" doc:id="5bc94197-9bad-4f67-aae9-27ab06fd3a0b" expression="#[attributes.statusCode]" is="#[MunitTools::equalTo(400)]" message="Not equivalent status codes"/>
+			<munit-tools:assert-that doc:name="Assert that" doc:id="b277c259-5c94-40ab-b4bc-9710d2d24823" expression="#[payload]" is="#[MunitTools::notNullValue()]" />
+			<munit-tools:assert-that doc:name="Assert that" doc:id="db0542ca-cc50-4b9f-9ffd-04b145c85f0e" expression="#[payload]" is='#[MunitTools::equalTo(readUrl("classpath://responses/getusers/select-users-invalid-header-error.json"))]'/>
+		</munit:validation>
+	
+	</munit:test>
+	
+	<munit:test name="get:\users\(username):main-config-200-application\json-FlowTest" description="Verifying functionality of [get:\users\(username):main-config-200-application\json]">
+        <munit:enable-flow-sources>
+            <munit:enable-flow-source value="main-main" />
+            <munit:enable-flow-source value="get:\users\(username):main-config" />
+        </munit:enable-flow-sources>
+        <munit:behavior >
+			<set-variable value="#['teki']" doc:name="Set Variable" doc:id="dc0b0bb7-131f-4eb5-89bc-f91b3f38d1b2" variableName="username"/>
+			<munit-tools:mock-when doc:name="Mock when" doc:id="95fb33de-9376-4c59-a332-b9acf2ea8e6e" processor="db:select">
+				<munit-tools:with-attributes >
+					<munit-tools:with-attribute attributeName="doc:id" whereValue="1e17f4b7-e7f7-49dc-a1d1-4641f1a861a7" />
+				</munit-tools:with-attributes>
+				<munit-tools:then-return >
+					<munit-tools:payload value='#[readUrl("classpath://responses/getuser/select-user-db-response.json", "application/json")]'/>
+				</munit-tools:then-return>
+			</munit-tools:mock-when>
+			<munit-tools:mock-when doc:name="Mock when" doc:id="58b7e85c-3a91-4f3a-8453-e95db9392f6c" processor="db:select">
+				<munit-tools:with-attributes >
+					<munit-tools:with-attribute attributeName="doc:id" whereValue="92837a8b-ef96-40d0-a51c-1de6d30dd10b" />
+				</munit-tools:with-attributes>
+				<munit-tools:then-return >
+					<munit-tools:payload value='#[readUrl("classpath://responses/getuser/select-account-db-response.json", "application/json")]'/>
+				</munit-tools:then-return>
+			</munit-tools:mock-when>
+		</munit:behavior>
+		<munit:execution>
+            <http:request config-ref="HTTP_Request_Configuration" method="GET" path="#['/users/$(vars.username)']">
+                <http:headers><![CDATA[#[output application/java
+---
+{
+	"Accept" : "application/json",
+	"headerId" : "j32io33ise4k2qq1"
+}]]]></http:headers>
+            </http:request>
+        </munit:execution>
+        <munit:validation>
+            <logger level="INFO" doc:name="Logger" doc:id="1c73a428-229b-4639-b5fa-707a9976cb1e" message="#[payload]"/>
+			<munit-tools:assert-that expression="#[attributes.statusCode]" is="#[MunitTools::equalTo(200)]" message="The HTTP Status code is not correct!" doc:name="Assert That Status Code is 200" />
+			<munit-tools:assert-that doc:name="Assert that first element is equal." doc:id="9a4c64a6-877c-4800-a703-0bf177e77d65" expression="#[payload.username]" is='#[MunitTools::equalTo("teki")]' message="Username list doesn not match."/>
+			<munit-tools:assert-that doc:name="Assert that payload and response are equal." doc:id="cc471582-6eb1-4727-a6f7-39cd504a1652" expression="#[payload]" is='#[MunitTools::equalTo(readUrl("classpath://responses/getuser/select-user-final-response.json"))]'/>
+        </munit:validation>
+    </munit:test>
+    
+    <munit:test name="get:\users\(username):main-config-400-application\json-FlowTest" description="Verifying functionality of [get:\users\(username):main-config-400-application\json]">
+        <munit:enable-flow-sources>
+            <munit:enable-flow-source value="main-main" />
+            <munit:enable-flow-source value="get:\users\(username):main-config" />
+        </munit:enable-flow-sources>
+        <munit:behavior >
+			<set-variable value="#['teki']" doc:name="Set Variable" doc:id="f287c0f3-a3fe-4ab2-b1f3-406e7edfccde" variableName="username"/>
+			<munit-tools:mock-when doc:name="Mock when" doc:id="5ea24738-27cd-4682-833a-a8251af16517" processor="db:select">
+				<munit-tools:with-attributes >
+					<munit-tools:with-attribute attributeName="doc:id" whereValue="1e17f4b7-e7f7-49dc-a1d1-4641f1a861a7" />
+				</munit-tools:with-attributes>
+				<munit-tools:then-return >
+					<munit-tools:payload value='#[output application/java --- {}]'/>
+				</munit-tools:then-return>
+			</munit-tools:mock-when>
+		</munit:behavior>
+		<munit:execution>
+            <http:request config-ref="HTTP_Request_Configuration" method="GET" path="#['/users/$(vars.username)']">
+                <http:headers><![CDATA[#[output application/java
+---
+{
+	"Accept" : "application/json",
+	"headerId" : "j32io33ise4k2qq1"
+}]]]></http:headers>
+				<http:response-validator >
+					<http:success-status-code-validator values="400..500" />
+				</http:response-validator>
+            </http:request>
+        </munit:execution>
+        <munit:validation>
+            <logger level="INFO" doc:name="Logger" doc:id="e4a6ef40-9414-43cf-b9d9-7af385b562cc" message="#[payload]"/>
+			<munit-tools:assert-that expression="#[attributes.statusCode]" is="#[MunitTools::equalTo(400)]" message="The HTTP Status code is not correct!" doc:name="Assert That Status Code is 200" />
+			<munit-tools:assert-that doc:name="Assert that Payload is not null." doc:id="84f7aa5a-7488-4296-821d-c00eb0551ae4" expression="#[payload]" is="#[MunitTools::notNullValue()]" />
+			<munit-tools:assert-that doc:name="Assert that payload and response are equal." doc:id="3e7efec6-37e5-4db9-b9ca-09fa6a80bca0" expression="#[payload]" is='#[MunitTools::equalTo(readUrl("classpath://responses/getuser/select-user-error.json"))]'/>
+        </munit:validation>
+    </munit:test>
+	<munit:test name="main-apikit-testTest" description="MUnit Test" doc:id="ec9d32c8-101b-4c5f-8808-806067405715" >
+		<munit:behavior >
+			<munit-tools:mock-when doc:name="Mock when" doc:id="2b8ecc8e-0222-4940-bf51-8bfd97c190b7" processor="file:read">
+				<munit-tools:with-attributes >
+					<munit-tools:with-attribute attributeName="doc:id" whereValue="f81d165f-b9e1-4e2c-86dd-539fd67ce51c" />
+				</munit-tools:with-attributes>
+				<munit-tools:then-return >
+					<munit-tools:payload value='#[readUrl("classpath://responses/mailer/read-response.txt", "application/java")]'/>
+				</munit-tools:then-return>
+			</munit-tools:mock-when>
+			<munit-tools:mock-when doc:name="Mock when" doc:id="55320035-7a3f-4547-af63-ae513bbd8445" processor="email:send">
+				<munit-tools:with-attributes >
+					<munit-tools:with-attribute attributeName="doc:id" whereValue="cacaab81-3324-4dd6-babb-f1b0aca8e9ed" />
+				</munit-tools:with-attributes>
+			</munit-tools:mock-when>
+		</munit:behavior>
+		<munit:execution >
+			<flow-ref doc:name="mf-response-mailer" doc:id="e76cf23d-07cd-4ad5-8321-d14703b88840" name="mf-response-mailer"/>
+		</munit:execution>
+		<munit:validation >
+			<munit-tools:assert-that doc:name="Assert that" doc:id="5a7c87fe-7eb6-4f99-bb3b-ab0a30c20527" expression='#[""]' is="#[MunitTools::notNullValue()]"/>
+		</munit:validation>
+	</munit:test>
+</mule>

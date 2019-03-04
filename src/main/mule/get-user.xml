@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:ee="http://www.mulesoft.org/schema/mule/ee/core" xmlns="http://www.mulesoft.org/schema/mule/core"
+	xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/ee/core/current/mule-ee.xsd">
+	<sub-flow name="sf-get-user" doc:id="66f63bf7-a936-4fa9-af2b-30298544f8f5" >
+		<flow-ref doc:name="sf-select-user" doc:id="7e05ca60-bf41-4c1b-89f0-c4e661aa5f20" name="sf-select-user" />
+		<set-variable value="#[payload.user_name]" doc:name="Set Variable" doc:id="fef6fe44-1250-4ccd-9678-22ef60ead47b" variableName="userName"/>
+		<choice doc:name="Choice" doc:id="7e6c9c8c-57de-4de7-8f2e-c09e8fa02c0e" >
+			<when expression="#[payload != null and sizeOf(payload) &gt; 0]">
+				<flow-ref doc:name="sf-select-account" doc:id="c22d1bf0-bb30-4a49-a666-dde70ba87bb3" name="sf-select-account" />
+				<ee:transform doc:name="Transform Message" doc:id="fb152ed1-ed78-41f9-9f6e-0c96d5597379">
+			<ee:message>
+						<ee:set-payload resource="dwScripts/user/dwFinalTransformation.dwl" />
+			</ee:message>
+					<ee:variables >
+						<ee:set-variable variableName="httpStatus" ><![CDATA[200]]></ee:set-variable>
+					</ee:variables>
+		</ee:transform>
+<!-- 				<set-variable value="200" doc:name="Set Variable" doc:id="e6f7f1ec-9872-4c3b-99b1-ef896e3a9851" variableName="statusCode"/> -->
+			</when>
+			<otherwise >
+				<ee:transform doc:name="Transform Message" doc:id="65c151d8-cd11-4efb-b0f6-fc52ee035177" >
+					<ee:message >
+						<ee:set-payload resource="dwScripts/user/dwTransformUserNotFound.dwl" />
+					</ee:message>
+					<ee:variables >
+						<ee:set-variable variableName="httpStatus" ><![CDATA[400]]></ee:set-variable>
+					</ee:variables>
+				</ee:transform>
+<!-- 				<set-variable value="400" doc:name="Set Variable" doc:id="d2b51b99-36a8-4af8-8a3d-d4e482f4b739" variableName="statusCode"/> -->
+<!-- 				<raise-error doc:name="Raise error" doc:id="60db35a6-5049-4665-9107-171a62444250" type="EXPRESSION:DATA_NOT_FOUND" description="Data not found."/> -->
+			</otherwise>
+		</choice>
+		<flow-ref doc:name="cf-write-file" doc:id="4e5c7331-0f4b-4941-aa30-d00c324c723a" name="cf-write-file"/>
+
+	</sub-flow>
+</mule>

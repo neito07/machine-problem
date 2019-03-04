@@ -1,0 +1,60 @@
+-- phpMyAdmin SQL Dump
+-- version 4.8.3
+-- https://www.phpmyadmin.net/
+--
+-- Host: localhost:8889
+-- Generation Time: Mar 04, 2019 at 02:09 AM
+-- Server version: 5.7.23
+-- PHP Version: 7.2.10
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET time_zone = "+00:00";
+
+--
+-- Database: `machine_problem`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `account_table`
+--
+
+CREATE TABLE `account_table` (
+  `id` int(11) NOT NULL,
+  `user_id` varchar(100) NOT NULL,
+  `active` enum('true','false') NOT NULL,
+  `date_registered` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `account_table`
+--
+
+INSERT INTO `account_table` (`id`, `user_id`, `active`, `date_registered`) VALUES
+(1, 'teki', 'true', '2019-01-04 09:42:21'),
+(3, 'paul', 'true', '2019-01-04 09:42:51'),
+(5, 'bryan', 'true', '2019-01-04 09:43:18'),
+(6, 'alex', 'true', '2019-02-14 15:25:04'),
+(7, 'john', 'false', '2019-02-14 15:25:22');
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `account_table`
+--
+ALTER TABLE `account_table`
+  ADD PRIMARY KEY (`id`),
+  ADD UNIQUE KEY `userId` (`user_id`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `account_table`
+--
+ALTER TABLE `account_table`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;

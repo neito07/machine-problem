@@ -1,0 +1,2436 @@
+Response: 
+TimeStamp: 2019-03-01T09:13:32.473+08:00
+
+{
+  "users": [
+    {
+      "username": "teki",
+      "fullname": "aileen tecson",
+      "age": 32,
+      "gender": "Female",
+      "dateRegistered": "2019-01-04T09:42:21"
+    },
+    {
+      "username": "paul",
+      "fullname": "paul macalindong",
+      "age": 43,
+      "gender": "Male",
+      "dateRegistered": "2019-01-04T09:42:51"
+    },
+    {
+      "username": "bryan",
+      "fullname": "bryan ruiz",
+      "age": 45,
+      "gender": "Male",
+      "dateRegistered": "2019-01-04T09:43:18"
+    }
+  ]
+}
+
+ ----------------- 
+
+Response: 
+TimeStamp: 2019-03-01T09:15:25.316+08:00
+
+{
+  "users": [
+    {
+      "username": "teki",
+      "fullname": "aileen tecson",
+      "age": 32,
+      "gender": "Female",
+      "dateRegistered": "2019-01-04T09:42:21"
+    },
+    {
+      "username": "paul",
+      "fullname": "paul macalindong",
+      "age": 43,
+      "gender": "Male",
+      "dateRegistered": "2019-01-04T09:42:51"
+    },
+    {
+      "username": "bryan",
+      "fullname": "bryan ruiz",
+      "age": 45,
+      "gender": "Male",
+      "dateRegistered": "2019-01-04T09:43:18"
+    }
+  ]
+}
+
+ ----------------- 
+
+Response: 
+TimeStamp: 2019-03-01T09:29:40.892+08:00
+
+{
+  "users": [
+    {
+      "username": "teki",
+      "fullname": "aileen tecson",
+      "age": 32,
+      "gender": "Female",
+      "dateRegistered": "2019-01-04T09:42:21"
+    },
+    {
+      "username": "paul",
+      "fullname": "paul macalindong",
+      "age": 43,
+      "gender": "Male",
+      "dateRegistered": "2019-01-04T09:42:51"
+    },
+    {
+      "username": "bryan",
+      "fullname": "bryan ruiz",
+      "age": 45,
+      "gender": "Male",
+      "dateRegistered": "2019-01-04T09:43:18"
+    }
+  ]
+}
+
+ ----------------- 
+
+Response: 
+TimeStamp: 2019-03-01T09:35:25.268+08:00
+
+{
+  "users": [
+    {
+      "username": "teki",
+      "fullname": "aileen tecson",
+      "age": 32,
+      "gender": "Female",
+      "dateRegistered": "2019-01-04T09:42:21"
+    },
+    {
+      "username": "paul",
+      "fullname": "paul macalindong",
+      "age": 43,
+      "gender": "Male",
+      "dateRegistered": "2019-01-04T09:42:51"
+    },
+    {
+      "username": "bryan",
+      "fullname": "bryan ruiz",
+      "age": 45,
+      "gender": "Male",
+      "dateRegistered": "2019-01-04T09:43:18"
+    }
+  ]
+}
+
+ ----------------- 
+
+Response: 
+TimeStamp: 2019-03-01T09:43:57.471+08:00
+
+{
+  "users": [
+    {
+      "username": "teki",
+      "fullname": "aileen tecson",
+      "age": 32,
+      "gender": "Female",
+      "dateRegistered": "2019-01-04T09:42:21"
+    },
+    {
+      "username": "paul",
+      "fullname": "paul macalindong",
+      "age": 43,
+      "gender": "Male",
+      "dateRegistered": "2019-01-04T09:42:51"
+    },
+    {
+      "username": "bryan",
+      "fullname": "bryan ruiz",
+      "age": 45,
+      "gender": "Male",
+      "dateRegistered": "2019-01-04T09:43:18"
+    }
+  ]
+}
+
+ ----------------- 
+
+Response: 
+TimeStamp: 2019-03-01T09:45:08.867+08:00
+
+{
+  "users": [
+    {
+      "username": "teki",
+      "fullname": "aileen tecson",
+      "age": 32,
+      "gender": "Female",
+      "dateRegistered": "2019-01-04T09:42:21"
+    },
+    {
+      "username": "paul",
+      "fullname": "paul macalindong",
+      "age": 43,
+      "gender": "Male",
+      "dateRegistered": "2019-01-04T09:42:51"
+    },
+    {
+      "username": "bryan",
+      "fullname": "bryan ruiz",
+      "age": 45,
+      "gender": "Male",
+      "dateRegistered": "2019-01-04T09:43:18"
+    }
+  ]
+}
+
+ ----------------- 
+
+Response: 
+TimeStamp: 2019-03-01T09:51:16.02+08:00
+
+{
+  "users": [
+    {
+      "username": "teki",
+      "fullname": "aileen tecson",
+      "age": 32,
+      "gender": "Female",
+      "dateRegistered": "2019-01-04T09:42:21"
+    },
+    {
+      "username": "paul",
+      "fullname": "paul macalindong",
+      "age": 43,
+      "gender": "Male",
+      "dateRegistered": "2019-01-04T09:42:51"
+    },
+    {
+      "username": "bryan",
+      "fullname": "bryan ruiz",
+      "age": 45,
+      "gender": "Male",
+      "dateRegistered": "2019-01-04T09:43:18"
+    }
+  ]
+}
+
+ ----------------- 
+
+Response: 
+TimeStamp: 2019-03-01T09:53:43.082+08:00
+
+{
+  "users": [
+    {
+      "username": "teki",
+      "fullname": "aileen tecson",
+      "age": 32,
+      "gender": "Female",
+      "dateRegistered": "2019-01-04T09:42:21"
+    },
+    {
+      "username": "paul",
+      "fullname": "paul macalindong",
+      "age": 43,
+      "gender": "Male",
+      "dateRegistered": "2019-01-04T09:42:51"
+    },
+    {
+      "username": "bryan",
+      "fullname": "bryan ruiz",
+      "age": 45,
+      "gender": "Male",
+      "dateRegistered": "2019-01-04T09:43:18"
+    }
+  ]
+}
+
+ ----------------- 
+
+Response: 
+TimeStamp: 2019-03-01T09:55:43.937+08:00
+
+{
+  "users": [
+    {
+      "username": "teki",
+      "fullname": "aileen tecson",
+      "age": 32,
+      "gender": "Female",
+      "dateRegistered": "2019-01-04T09:42:21"
+    },
+    {
+      "username": "paul",
+      "fullname": "paul macalindong",
+      "age": 43,
+      "gender": "Male",
+      "dateRegistered": "2019-01-04T09:42:51"
+    },
+    {
+      "username": "bryan",
+      "fullname": "bryan ruiz",
+      "age": 45,
+      "gender": "Male",
+      "dateRegistered": "2019-01-04T09:43:18"
+    }
+  ]
+}
+
+ ----------------- 
+
+Response: 
+TimeStamp: 2019-03-01T09:58:56.707+08:00
+
+{
+  "users": [
+    {
+      "username": "teki",
+      "fullname": "aileen tecson",
+      "age": 32,
+      "gender": "Female",
+      "dateRegistered": "2019-01-04T09:42:21"
+    },
+    {
+      "username": "paul",
+      "fullname": "paul macalindong",
+      "age": 43,
+      "gender": "Male",
+      "dateRegistered": "2019-01-04T09:42:51"
+    },
+    {
+      "username": "bryan",
+      "fullname": "bryan ruiz",
+      "age": 45,
+      "gender": "Male",
+      "dateRegistered": "2019-01-04T09:43:18"
+    }
+  ]
+}
+
+ ----------------- 
+
+Response: 
+TimeStamp: 2019-03-01T10:03:32.21+08:00
+
+{
+  "users": [
+    {
+      "username": "teki",
+      "fullname": "aileen tecson",
+      "age": 32,
+      "gender": "Female",
+      "dateRegistered": "2019-01-04T09:42:21"
+    },
+    {
+      "username": "paul",
+      "fullname": "paul macalindong",
+      "age": 43,
+      "gender": "Male",
+      "dateRegistered": "2019-01-04T09:42:51"
+    },
+    {
+      "username": "bryan",
+      "fullname": "bryan ruiz",
+      "age": 45,
+      "gender": "Male",
+      "dateRegistered": "2019-01-04T09:43:18"
+    }
+  ]
+}
+
+ ----------------- 
+
+Response: 
+TimeStamp: 2019-03-01T10:03:32.883+08:00
+
+{
+  "message": "User not found!",
+  "errorCode": 400
+}
+
+ ----------------- 
+
+Response: 
+TimeStamp: 2019-03-01T10:44:38.621+08:00
+
+{
+  "users": [
+    {
+      "username": "teki",
+      "fullname": "aileen tecson",
+      "age": 32,
+      "gender": "Female",
+      "dateRegistered": "2019-01-04T09:42:21"
+    },
+    {
+      "username": "paul",
+      "fullname": "paul macalindong",
+      "age": 43,
+      "gender": "Male",
+      "dateRegistered": "2019-01-04T09:42:51"
+    },
+    {
+      "username": "bryan",
+      "fullname": "bryan ruiz",
+      "age": 45,
+      "gender": "Male",
+      "dateRegistered": "2019-01-04T09:43:18"
+    }
+  ]
+}
+
+ ----------------- 
+
+Response: 
+TimeStamp: 2019-03-01T10:48:37.277+08:00
+
+{
+  "users": [
+    {
+      "username": "teki",
+      "fullname": "aileen tecson",
+      "age": 32,
+      "gender": "Female",
+      "dateRegistered": "2019-01-04T09:42:21"
+    },
+    {
+      "username": "paul",
+      "fullname": "paul macalindong",
+      "age": 43,
+      "gender": "Male",
+      "dateRegistered": "2019-01-04T09:42:51"
+    },
+    {
+      "username": "bryan",
+      "fullname": "bryan ruiz",
+      "age": 45,
+      "gender": "Male",
+      "dateRegistered": "2019-01-04T09:43:18"
+    }
+  ]
+}
+
+ ----------------- 
+
+Response: 
+TimeStamp: 2019-03-01T10:52:03.073+08:00
+
+{
+  "users": [
+    {
+      "username": "teki",
+      "fullname": "aileen tecson",
+      "age": 32,
+      "gender": "Female",
+      "dateRegistered": "2019-01-04T09:42:21"
+    },
+    {
+      "username": "paul",
+      "fullname": "paul macalindong",
+      "age": 43,
+      "gender": "Male",
+      "dateRegistered": "2019-01-04T09:42:51"
+    },
+    {
+      "username": "bryan",
+      "fullname": "bryan ruiz",
+      "age": 45,
+      "gender": "Male",
+      "dateRegistered": "2019-01-04T09:43:18"
+    }
+  ]
+}
+
+ ----------------- 
+
+Response: 
+TimeStamp: 2019-03-01T10:56:21.595+08:00
+
+{
+  "users": [
+    {
+      "username": "teki",
+      "fullname": "aileen tecson",
+      "age": 32,
+      "gender": "Female",
+      "dateRegistered": "2019-01-04T09:42:21"
+    },
+    {
+      "username": "paul",
+      "fullname": "paul macalindong",
+      "age": 43,
+      "gender": "Male",
+      "dateRegistered": "2019-01-04T09:42:51"
+    },
+    {
+      "username": "bryan",
+      "fullname": "bryan ruiz",
+      "age": 45,
+      "gender": "Male",
+      "dateRegistered": "2019-01-04T09:43:18"
+    }
+  ]
+}
+
+ ----------------- 
+
+Response: 
+TimeStamp: 2019-03-01T10:58:12.92+08:00
+
+{
+  "users": [
+    {
+      "username": "teki",
+      "fullname": "aileen tecson",
+      "age": 32,
+      "gender": "Female",
+      "dateRegistered": "2019-01-04T09:42:21"
+    },
+    {
+      "username": "paul",
+      "fullname": "paul macalindong",
+      "age": 43,
+      "gender": "Male",
+      "dateRegistered": "2019-01-04T09:42:51"
+    },
+    {
+      "username": "bryan",
+      "fullname": "bryan ruiz",
+      "age": 45,
+      "gender": "Male",
+      "dateRegistered": "2019-01-04T09:43:18"
+    }
+  ]
+}
+
+ ----------------- 
+
+Response: 
+TimeStamp: 2019-03-01T10:59:57.906+08:00
+
+{
+  "users": [
+    {
+      "username": "teki",
+      "fullname": "aileen tecson",
+      "age": 32,
+      "gender": "Female",
+      "dateRegistered": "2019-01-04T09:42:21"
+    },
+    {
+      "username": "paul",
+      "fullname": "paul macalindong",
+      "age": 43,
+      "gender": "Male",
+      "dateRegistered": "2019-01-04T09:42:51"
+    },
+    {
+      "username": "bryan",
+      "fullname": "bryan ruiz",
+      "age": 45,
+      "gender": "Male",
+      "dateRegistered": "2019-01-04T09:43:18"
+    }
+  ]
+}
+
+ ----------------- 
+
+Response: 
+TimeStamp: 2019-03-01T11:02:39.796+08:00
+
+{
+  "users": [
+    {
+      "username": "teki",
+      "fullname": "aileen tecson",
+      "age": 32,
+      "gender": "Female",
+      "dateRegistered": "2019-01-04T09:42:21"
+    },
+    {
+      "username": "paul",
+      "fullname": "paul macalindong",
+      "age": 43,
+      "gender": "Male",
+      "dateRegistered": "2019-01-04T09:42:51"
+    },
+    {
+      "username": "bryan",
+      "fullname": "bryan ruiz",
+      "age": 45,
+      "gender": "Male",
+      "dateRegistered": "2019-01-04T09:43:18"
+    }
+  ]
+}
+
+ ----------------- 
+
+Response: 
+TimeStamp: 2019-03-01T11:12:35.879+08:00
+
+{
+  "users": [
+    {
+      "username": "teki",
+      "fullname": "aileen tecson",
+      "age": 32,
+      "gender": "Female",
+      "dateRegistered": "2019-01-04T09:42:21"
+    },
+    {
+      "username": "paul",
+      "fullname": "paul macalindong",
+      "age": 43,
+      "gender": "Male",
+      "dateRegistered": "2019-01-04T09:42:51"
+    },
+    {
+      "username": "bryan",
+      "fullname": "bryan ruiz",
+      "age": 45,
+      "gender": "Male",
+      "dateRegistered": "2019-01-04T09:43:18"
+    }
+  ]
+}
+
+ ----------------- 
+
+Response: 
+TimeStamp: 2019-03-01T11:12:36.541+08:00
+
+{
+  "message": "User not found!",
+  "errorCode": 400
+}
+
+ ----------------- 
+
+Response: 
+TimeStamp: 2019-03-01T11:17:22.728+08:00
+
+{
+  "users": [
+    {
+      "username": "teki",
+      "fullname": "aileen tecson",
+      "age": 32,
+      "gender": "Female",
+      "dateRegistered": "2019-01-04T09:42:21"
+    },
+    {
+      "username": "paul",
+      "fullname": "paul macalindong",
+      "age": 43,
+      "gender": "Male",
+      "dateRegistered": "2019-01-04T09:42:51"
+    },
+    {
+      "username": "bryan",
+      "fullname": "bryan ruiz",
+      "age": 45,
+      "gender": "Male",
+      "dateRegistered": "2019-01-04T09:43:18"
+    }
+  ]
+}
+
+ ----------------- 
+
+Response: 
+TimeStamp: 2019-03-01T11:17:23.401+08:00
+
+{
+  "message": "User not found!",
+  "errorCode": 400
+}
+
+ ----------------- 
+
+Response: 
+TimeStamp: 2019-03-01T11:19:28.006+08:00
+
+{
+  "users": [
+    {
+      "username": "teki",
+      "fullname": "aileen tecson",
+      "age": 32,
+      "gender": "Female",
+      "dateRegistered": "2019-01-04T09:42:21"
+    },
+    {
+      "username": "paul",
+      "fullname": "paul macalindong",
+      "age": 43,
+      "gender": "Male",
+      "dateRegistered": "2019-01-04T09:42:51"
+    },
+    {
+      "username": "bryan",
+      "fullname": "bryan ruiz",
+      "age": 45,
+      "gender": "Male",
+      "dateRegistered": "2019-01-04T09:43:18"
+    }
+  ]
+}
+
+ ----------------- 
+
+Response: 
+TimeStamp: 2019-03-01T11:19:28.691+08:00
+
+{
+  "message": "User not found!",
+  "errorCode": 400
+}
+
+ ----------------- 
+
+Response: 
+TimeStamp: 2019-03-01T11:20:58.555+08:00
+
+{
+  "users": [
+    {
+      "username": "teki",
+      "fullname": "aileen tecson",
+      "age": 32,
+      "gender": "Female",
+      "dateRegistered": "2019-01-04T09:42:21"
+    },
+    {
+      "username": "paul",
+      "fullname": "paul macalindong",
+      "age": 43,
+      "gender": "Male",
+      "dateRegistered": "2019-01-04T09:42:51"
+    },
+    {
+      "username": "bryan",
+      "fullname": "bryan ruiz",
+      "age": 45,
+      "gender": "Male",
+      "dateRegistered": "2019-01-04T09:43:18"
+    }
+  ]
+}
+
+ ----------------- 
+
+Response: 
+TimeStamp: 2019-03-01T11:20:59.309+08:00
+
+{
+  "message": "User not found!",
+  "errorCode": 400
+}
+
+ ----------------- 
+
+Response: 
+TimeStamp: 2019-03-01T11:26:29.015+08:00
+
+{
+  "users": [
+    {
+      "username": "teki",
+      "fullname": "aileen tecson",
+      "age": 32,
+      "gender": "Female",
+      "dateRegistered": "2019-01-04T09:42:21"
+    },
+    {
+      "username": "paul",
+      "fullname": "paul macalindong",
+      "age": 43,
+      "gender": "Male",
+      "dateRegistered": "2019-01-04T09:42:51"
+    },
+    {
+      "username": "bryan",
+      "fullname": "bryan ruiz",
+      "age": 45,
+      "gender": "Male",
+      "dateRegistered": "2019-01-04T09:43:18"
+    }
+  ]
+}
+
+ ----------------- 
+
+Response: 
+TimeStamp: 2019-03-01T11:26:29.797+08:00
+
+{
+  "message": "User not found!",
+  "errorCode": 400
+}
+
+ ----------------- 
+
+Response: 
+TimeStamp: 2019-03-01T11:31:41.657+08:00
+
+{
+  "users": [
+    {
+      "username": "teki",
+      "fullname": "aileen tecson",
+      "age": 32,
+      "gender": "Female",
+      "dateRegistered": "2019-01-04T09:42:21"
+    },
+    {
+      "username": "paul",
+      "fullname": "paul macalindong",
+      "age": 43,
+      "gender": "Male",
+      "dateRegistered": "2019-01-04T09:42:51"
+    },
+    {
+      "username": "bryan",
+      "fullname": "bryan ruiz",
+      "age": 45,
+      "gender": "Male",
+      "dateRegistered": "2019-01-04T09:43:18"
+    }
+  ]
+}
+
+ ----------------- 
+
+Response: 
+TimeStamp: 2019-03-01T11:31:42.412+08:00
+
+{
+  "message": "User not found!",
+  "errorCode": 400
+}
+
+ ----------------- 
+
+Response: 
+TimeStamp: 2019-03-01T11:38:06.371+08:00
+
+{
+  "users": [
+    {
+      "username": "teki",
+      "fullname": "aileen tecson",
+      "age": 32,
+      "gender": "Female",
+      "dateRegistered": "2019-01-04T09:42:21"
+    },
+    {
+      "username": "paul",
+      "fullname": "paul macalindong",
+      "age": 43,
+      "gender": "Male",
+      "dateRegistered": "2019-01-04T09:42:51"
+    },
+    {
+      "username": "bryan",
+      "fullname": "bryan ruiz",
+      "age": 45,
+      "gender": "Male",
+      "dateRegistered": "2019-01-04T09:43:18"
+    }
+  ]
+}
+
+ ----------------- 
+
+Response: 
+TimeStamp: 2019-03-01T11:38:07.125+08:00
+
+{
+  "message": "User not found!",
+  "errorCode": 400
+}
+
+ ----------------- 
+
+Response: 
+TimeStamp: 2019-03-01T11:40:08.328+08:00
+
+{
+  "users": [
+    {
+      "username": "teki",
+      "fullname": "aileen tecson",
+      "age": 32,
+      "gender": "Female",
+      "dateRegistered": "2019-01-04T09:42:21"
+    },
+    {
+      "username": "paul",
+      "fullname": "paul macalindong",
+      "age": 43,
+      "gender": "Male",
+      "dateRegistered": "2019-01-04T09:42:51"
+    },
+    {
+      "username": "bryan",
+      "fullname": "bryan ruiz",
+      "age": 45,
+      "gender": "Male",
+      "dateRegistered": "2019-01-04T09:43:18"
+    }
+  ]
+}
+
+ ----------------- 
+
+Response: 
+TimeStamp: 2019-03-01T11:40:09.086+08:00
+
+{
+  "message": "User not found!",
+  "errorCode": 400
+}
+
+ ----------------- 
+
+Response: 
+TimeStamp: 2019-03-01T11:42:04.46+08:00
+
+{
+  "users": [
+    {
+      "username": "teki",
+      "fullname": "aileen tecson",
+      "age": 32,
+      "gender": "Female",
+      "dateRegistered": "2019-01-04T09:42:21"
+    },
+    {
+      "username": "paul",
+      "fullname": "paul macalindong",
+      "age": 43,
+      "gender": "Male",
+      "dateRegistered": "2019-01-04T09:42:51"
+    },
+    {
+      "username": "bryan",
+      "fullname": "bryan ruiz",
+      "age": 45,
+      "gender": "Male",
+      "dateRegistered": "2019-01-04T09:43:18"
+    }
+  ]
+}
+
+ ----------------- 
+
+Response: 
+TimeStamp: 2019-03-01T11:42:05.269+08:00
+
+{
+  "message": "User not found!",
+  "errorCode": 400
+}
+
+ ----------------- 
+
+Response: 
+TimeStamp: 2019-03-01T11:45:45.629+08:00
+
+{
+  "users": [
+    {
+      "username": "teki",
+      "fullname": "aileen tecson",
+      "age": 32,
+      "gender": "Female",
+      "dateRegistered": "2019-01-04T09:42:21"
+    },
+    {
+      "username": "paul",
+      "fullname": "paul macalindong",
+      "age": 43,
+      "gender": "Male",
+      "dateRegistered": "2019-01-04T09:42:51"
+    },
+    {
+      "username": "bryan",
+      "fullname": "bryan ruiz",
+      "age": 45,
+      "gender": "Male",
+      "dateRegistered": "2019-01-04T09:43:18"
+    }
+  ]
+}
+
+ ----------------- 
+
+Response: 
+TimeStamp: 2019-03-01T11:45:46.367+08:00
+
+{
+  "message": "User not found!",
+  "errorCode": 400
+}
+
+ ----------------- 
+
+Response: 
+TimeStamp: 2019-03-01T12:08:14.216+08:00
+
+{
+  "message": "User not found!",
+  "errorCode": 400
+}
+
+ ----------------- 
+
+Response: 
+TimeStamp: 2019-03-01T12:08:24.957+08:00
+
+{
+  "username": "teki",
+  "fullname": "aileen tecson",
+  "age": 32,
+  "gender": "Female",
+  "dateRegistered": "2019-01-04T09:42:21"
+}
+
+ ----------------- 
+
+Response: 
+TimeStamp: 2019-03-01T12:24:59.342+08:00
+
+{
+  "users": [
+    {
+      "username": "teki",
+      "fullname": "aileen tecson",
+      "age": 32,
+      "gender": "Female",
+      "dateRegistered": "2019-01-04T09:42:21"
+    }
+  ]
+}
+
+ ----------------- 
+
+Response: 
+TimeStamp: 2019-03-01T12:24:59.896+08:00
+
+{
+  "message": "User not found!",
+  "errorCode": 400
+}
+
+ ----------------- 
+
+Response: 
+TimeStamp: 2019-03-01T14:28:56.614+08:00
+
+{
+  "users": [
+    {
+      "username": "teki",
+      "fullname": "aileen tecson",
+      "age": 32,
+      "gender": "Female",
+      "dateRegistered": "2019-01-04T09:42:21"
+    }
+  ]
+}
+
+ ----------------- 
+
+Response: 
+TimeStamp: 2019-03-01T14:28:57.285+08:00
+
+{
+  "message": "User not found!",
+  "errorCode": 400
+}
+
+ ----------------- 
+
+Response: 
+TimeStamp: 2019-03-01T14:35:04.455+08:00
+
+{
+  "users": [
+    {
+      "username": "teki",
+      "fullname": "aileen tecson",
+      "age": 32,
+      "gender": "Female",
+      "dateRegistered": "2019-01-04T09:42:21"
+    },
+    {
+      "username": "paul",
+      "fullname": "paul macalindong",
+      "age": 43,
+      "gender": "Male",
+      "dateRegistered": "2019-01-04T09:42:51"
+    },
+    {
+      "username": "bryan",
+      "fullname": "bryan ruiz",
+      "age": 45,
+      "gender": "Male",
+      "dateRegistered": "2019-01-04T09:43:18"
+    }
+  ]
+}
+
+ ----------------- 
+
+Response: 
+TimeStamp: 2019-03-01T14:35:05.095+08:00
+
+{
+  "message": "User not found!",
+  "errorCode": 400
+}
+
+ ----------------- 
+
+Response: 
+TimeStamp: 2019-03-01T14:35:52.091+08:00
+
+{
+  "users": [
+    {
+      "username": "teki",
+      "fullname": "aileen tecson",
+      "age": 32,
+      "gender": "Female",
+      "dateRegistered": "2019-01-04T09:42:21"
+    },
+    {
+      "username": "paul",
+      "fullname": "paul macalindong",
+      "age": 43,
+      "gender": "Male",
+      "dateRegistered": "2019-01-04T09:42:51"
+    },
+    {
+      "username": "bryan",
+      "fullname": "bryan ruiz",
+      "age": 45,
+      "gender": "Male",
+      "dateRegistered": "2019-01-04T09:43:18"
+    }
+  ]
+}
+
+ ----------------- 
+
+Response: 
+TimeStamp: 2019-03-01T14:35:52.742+08:00
+
+{
+  "message": "User not found!",
+  "errorCode": 400
+}
+
+ ----------------- 
+
+Response: 
+TimeStamp: 2019-03-01T14:46:19.038+08:00
+
+{
+  "users": [
+    {
+      "username": "teki",
+      "fullname": "aileen tecson",
+      "age": 32,
+      "gender": "Female",
+      "dateRegistered": "2019-01-04T09:42:21"
+    },
+    {
+      "username": "paul",
+      "fullname": "paul macalindong",
+      "age": 43,
+      "gender": "Male",
+      "dateRegistered": "2019-01-04T09:42:51"
+    },
+    {
+      "username": "bryan",
+      "fullname": "bryan ruiz",
+      "age": 45,
+      "gender": "Male",
+      "dateRegistered": "2019-01-04T09:43:18"
+    }
+  ]
+}
+
+ ----------------- 
+
+Response: 
+TimeStamp: 2019-03-01T14:46:19.815+08:00
+
+{
+  "message": "User not found!",
+  "errorCode": 400
+}
+
+ ----------------- 
+
+Response: 
+TimeStamp: 2019-03-01T14:47:59.313+08:00
+
+{
+  "users": [
+    {
+      "username": "teki",
+      "fullname": "aileen tecson",
+      "age": 32,
+      "gender": "Female",
+      "dateRegistered": "2019-01-04T09:42:21"
+    },
+    {
+      "username": "paul",
+      "fullname": "paul macalindong",
+      "age": 43,
+      "gender": "Male",
+      "dateRegistered": "2019-01-04T09:42:51"
+    },
+    {
+      "username": "bryan",
+      "fullname": "bryan ruiz",
+      "age": 45,
+      "gender": "Male",
+      "dateRegistered": "2019-01-04T09:43:18"
+    }
+  ]
+}
+
+ ----------------- 
+
+Response: 
+TimeStamp: 2019-03-01T14:48:00.06+08:00
+
+{
+  "message": "User not found!",
+  "errorCode": 400
+}
+
+ ----------------- 
+
+Response: 
+TimeStamp: 2019-03-01T14:50:50.824+08:00
+
+{
+  "users": [
+    {
+      "username": "teki",
+      "fullname": "aileen tecson",
+      "age": 32,
+      "gender": "Female",
+      "dateRegistered": "2019-01-04T09:42:21"
+    },
+    {
+      "username": "paul",
+      "fullname": "paul macalindong",
+      "age": 43,
+      "gender": "Male",
+      "dateRegistered": "2019-01-04T09:42:51"
+    },
+    {
+      "username": "bryan",
+      "fullname": "bryan ruiz",
+      "age": 45,
+      "gender": "Male",
+      "dateRegistered": "2019-01-04T09:43:18"
+    }
+  ]
+}
+
+ ----------------- 
+
+Response: 
+TimeStamp: 2019-03-01T14:50:51.533+08:00
+
+{
+  "message": "User not found!",
+  "errorCode": 400
+}
+
+ ----------------- 
+
+Response: 
+TimeStamp: 2019-03-01T14:52:41.047+08:00
+
+{
+  "users": [
+    {
+      "username": "teki",
+      "fullname": "aileen tecson",
+      "age": 32,
+      "gender": "Female",
+      "dateRegistered": "2019-01-04T09:42:21"
+    },
+    {
+      "username": "paul",
+      "fullname": "paul macalindong",
+      "age": 43,
+      "gender": "Male",
+      "dateRegistered": "2019-01-04T09:42:51"
+    },
+    {
+      "username": "bryan",
+      "fullname": "bryan ruiz",
+      "age": 45,
+      "gender": "Male",
+      "dateRegistered": "2019-01-04T09:43:18"
+    }
+  ]
+}
+
+ ----------------- 
+
+Response: 
+TimeStamp: 2019-03-01T14:52:41.823+08:00
+
+{
+  "message": "User not found!",
+  "errorCode": 400
+}
+
+ ----------------- 
+
+Response: 
+TimeStamp: 2019-03-01T14:54:02.098+08:00
+
+{
+  "users": [
+    {
+      "username": "teki",
+      "fullname": "aileen tecson",
+      "age": 32,
+      "gender": "Female",
+      "dateRegistered": "2019-01-04T09:42:21"
+    },
+    {
+      "username": "paul",
+      "fullname": "paul macalindong",
+      "age": 43,
+      "gender": "Male",
+      "dateRegistered": "2019-01-04T09:42:51"
+    },
+    {
+      "username": "bryan",
+      "fullname": "bryan ruiz",
+      "age": 45,
+      "gender": "Male",
+      "dateRegistered": "2019-01-04T09:43:18"
+    }
+  ]
+}
+
+ ----------------- 
+
+Response: 
+TimeStamp: 2019-03-01T14:54:02.837+08:00
+
+{
+  "message": "User not found!",
+  "errorCode": 400
+}
+
+ ----------------- 
+
+Response: 
+TimeStamp: 2019-03-01T15:13:33.092+08:00
+
+{
+  "users": [
+    {
+      "username": "teki",
+      "fullname": "aileen tecson",
+      "age": 32,
+      "gender": "Female",
+      "dateRegistered": "2019-01-04T09:42:21"
+    },
+    {
+      "username": "paul",
+      "fullname": "paul macalindong",
+      "age": 43,
+      "gender": "Male",
+      "dateRegistered": "2019-01-04T09:42:51"
+    },
+    {
+      "username": "bryan",
+      "fullname": "bryan ruiz",
+      "age": 45,
+      "gender": "Male",
+      "dateRegistered": "2019-01-04T09:43:18"
+    }
+  ]
+}
+
+ ----------------- 
+
+Response: 
+TimeStamp: 2019-03-01T15:13:33.819+08:00
+
+{
+  "message": "User not found!",
+  "errorCode": 400
+}
+
+ ----------------- 
+
+Response: 
+TimeStamp: 2019-03-01T15:15:02.758+08:00
+
+{
+  "users": [
+    {
+      "username": "teki",
+      "fullname": "aileen tecson",
+      "age": 32,
+      "gender": "Female",
+      "dateRegistered": "2019-01-04T09:42:21"
+    },
+    {
+      "username": "paul",
+      "fullname": "paul macalindong",
+      "age": 43,
+      "gender": "Male",
+      "dateRegistered": "2019-01-04T09:42:51"
+    },
+    {
+      "username": "bryan",
+      "fullname": "bryan ruiz",
+      "age": 45,
+      "gender": "Male",
+      "dateRegistered": "2019-01-04T09:43:18"
+    }
+  ]
+}
+
+ ----------------- 
+
+Response: 
+TimeStamp: 2019-03-01T15:15:03.451+08:00
+
+{
+  "message": "User not found!",
+  "errorCode": 400
+}
+
+ ----------------- 
+
+Response: 
+TimeStamp: 2019-03-01T15:17:34.525+08:00
+
+{
+  "users": [
+    {
+      "username": "teki",
+      "fullname": "aileen tecson",
+      "age": 32,
+      "gender": "Female",
+      "dateRegistered": "2019-01-04T09:42:21"
+    },
+    {
+      "username": "paul",
+      "fullname": "paul macalindong",
+      "age": 43,
+      "gender": "Male",
+      "dateRegistered": "2019-01-04T09:42:51"
+    },
+    {
+      "username": "bryan",
+      "fullname": "bryan ruiz",
+      "age": 45,
+      "gender": "Male",
+      "dateRegistered": "2019-01-04T09:43:18"
+    }
+  ]
+}
+
+ ----------------- 
+
+Response: 
+TimeStamp: 2019-03-01T15:17:35.239+08:00
+
+{
+  "message": "User not found!",
+  "errorCode": 400
+}
+
+ ----------------- 
+
+Response: 
+TimeStamp: 2019-03-01T15:22:08.019+08:00
+
+{
+  "users": [
+    {
+      "username": "teki",
+      "fullname": "aileen tecson",
+      "age": 32,
+      "gender": "Female",
+      "dateRegistered": "2019-01-04T09:42:21"
+    },
+    {
+      "username": "paul",
+      "fullname": "paul macalindong",
+      "age": 43,
+      "gender": "Male",
+      "dateRegistered": "2019-01-04T09:42:51"
+    },
+    {
+      "username": "bryan",
+      "fullname": "bryan ruiz",
+      "age": 45,
+      "gender": "Male",
+      "dateRegistered": "2019-01-04T09:43:18"
+    }
+  ]
+}
+
+ ----------------- 
+
+Response: 
+TimeStamp: 2019-03-01T15:22:09.158+08:00
+
+{
+  "message": "User not found!",
+  "errorCode": 400
+}
+
+ ----------------- 
+
+Response: 
+TimeStamp: 2019-03-01T15:24:45.254+08:00
+
+{
+  "users": [
+    {
+      "username": "teki",
+      "fullname": "aileen tecson",
+      "age": 32,
+      "gender": "Female",
+      "dateRegistered": "2019-01-04T09:42:21"
+    },
+    {
+      "username": "paul",
+      "fullname": "paul macalindong",
+      "age": 43,
+      "gender": "Male",
+      "dateRegistered": "2019-01-04T09:42:51"
+    },
+    {
+      "username": "bryan",
+      "fullname": "bryan ruiz",
+      "age": 45,
+      "gender": "Male",
+      "dateRegistered": "2019-01-04T09:43:18"
+    }
+  ]
+}
+
+ ----------------- 
+
+Response: 
+TimeStamp: 2019-03-01T15:24:46.442+08:00
+
+{
+  "message": "User not found!",
+  "errorCode": 400
+}
+
+ ----------------- 
+
+Response: 
+TimeStamp: 2019-03-01T15:27:23.685+08:00
+
+{
+  "users": [
+    {
+      "username": "teki",
+      "fullname": "aileen tecson",
+      "age": 32,
+      "gender": "Female",
+      "dateRegistered": "2019-01-04T09:42:21"
+    },
+    {
+      "username": "paul",
+      "fullname": "paul macalindong",
+      "age": 43,
+      "gender": "Male",
+      "dateRegistered": "2019-01-04T09:42:51"
+    },
+    {
+      "username": "bryan",
+      "fullname": "bryan ruiz",
+      "age": 45,
+      "gender": "Male",
+      "dateRegistered": "2019-01-04T09:43:18"
+    }
+  ]
+}
+
+ ----------------- 
+
+Response: 
+TimeStamp: 2019-03-01T15:27:24.936+08:00
+
+{
+  "message": "User not found!",
+  "errorCode": 400
+}
+
+ ----------------- 
+
+Response: 
+TimeStamp: 2019-03-01T15:30:24.121+08:00
+
+{
+  "users": [
+    {
+      "username": "teki",
+      "fullname": "aileen tecson",
+      "age": 32,
+      "gender": "Female",
+      "dateRegistered": "2019-01-04T09:42:21"
+    },
+    {
+      "username": "paul",
+      "fullname": "paul macalindong",
+      "age": 43,
+      "gender": "Male",
+      "dateRegistered": "2019-01-04T09:42:51"
+    },
+    {
+      "username": "bryan",
+      "fullname": "bryan ruiz",
+      "age": 45,
+      "gender": "Male",
+      "dateRegistered": "2019-01-04T09:43:18"
+    }
+  ]
+}
+
+ ----------------- 
+
+Response: 
+TimeStamp: 2019-03-01T15:30:25.283+08:00
+
+{
+  "message": "User not found!",
+  "errorCode": 400
+}
+
+ ----------------- 
+
+Response: 
+TimeStamp: 2019-03-01T15:31:39.009+08:00
+
+{
+  "users": [
+    {
+      "username": "teki",
+      "fullname": "aileen tecson",
+      "age": 32,
+      "gender": "Female",
+      "dateRegistered": "2019-01-04T09:42:21"
+    },
+    {
+      "username": "paul",
+      "fullname": "paul macalindong",
+      "age": 43,
+      "gender": "Male",
+      "dateRegistered": "2019-01-04T09:42:51"
+    },
+    {
+      "username": "bryan",
+      "fullname": "bryan ruiz",
+      "age": 45,
+      "gender": "Male",
+      "dateRegistered": "2019-01-04T09:43:18"
+    }
+  ]
+}
+
+ ----------------- 
+
+Response: 
+TimeStamp: 2019-03-01T15:31:40.169+08:00
+
+{
+  "message": "User not found!",
+  "errorCode": 400
+}
+
+ ----------------- 
+
+Response: 
+TimeStamp: 2019-03-01T15:35:44.209+08:00
+
+{
+  "users": [
+    {
+      "username": "teki",
+      "fullname": "aileen tecson",
+      "age": 32,
+      "gender": "Female",
+      "dateRegistered": "2019-01-04T09:42:21"
+    },
+    {
+      "username": "paul",
+      "fullname": "paul macalindong",
+      "age": 43,
+      "gender": "Male",
+      "dateRegistered": "2019-01-04T09:42:51"
+    },
+    {
+      "username": "bryan",
+      "fullname": "bryan ruiz",
+      "age": 45,
+      "gender": "Male",
+      "dateRegistered": "2019-01-04T09:43:18"
+    }
+  ]
+}
+
+ ----------------- 
+
+Response: 
+TimeStamp: 2019-03-01T15:35:45.382+08:00
+
+{
+  "message": "User not found!",
+  "errorCode": 400
+}
+
+ ----------------- 
+
+Response: 
+TimeStamp: 2019-03-01T15:37:13.763+08:00
+
+{
+  "users": [
+    {
+      "username": "teki",
+      "fullname": "aileen tecson",
+      "age": 32,
+      "gender": "Female",
+      "dateRegistered": "2019-01-04T09:42:21"
+    },
+    {
+      "username": "paul",
+      "fullname": "paul macalindong",
+      "age": 43,
+      "gender": "Male",
+      "dateRegistered": "2019-01-04T09:42:51"
+    },
+    {
+      "username": "bryan",
+      "fullname": "bryan ruiz",
+      "age": 45,
+      "gender": "Male",
+      "dateRegistered": "2019-01-04T09:43:18"
+    }
+  ]
+}
+
+ ----------------- 
+
+Response: 
+TimeStamp: 2019-03-01T15:37:14.89+08:00
+
+{
+  "message": "User not found!",
+  "errorCode": 400
+}
+
+ ----------------- 
+
+Response: 
+TimeStamp: 2019-03-01T15:40:24.985+08:00
+
+{
+  "users": [
+    {
+      "username": "teki",
+      "fullname": "aileen tecson",
+      "age": 32,
+      "gender": "Female",
+      "dateRegistered": "2019-01-04T09:42:21"
+    },
+    {
+      "username": "paul",
+      "fullname": "paul macalindong",
+      "age": 43,
+      "gender": "Male",
+      "dateRegistered": "2019-01-04T09:42:51"
+    },
+    {
+      "username": "bryan",
+      "fullname": "bryan ruiz",
+      "age": 45,
+      "gender": "Male",
+      "dateRegistered": "2019-01-04T09:43:18"
+    }
+  ]
+}
+
+ ----------------- 
+
+Response: 
+TimeStamp: 2019-03-01T15:40:26.145+08:00
+
+{
+  "message": "User not found!",
+  "errorCode": 400
+}
+
+ ----------------- 
+
+Response: 
+TimeStamp: 2019-03-01T15:42:27.813+08:00
+
+{
+  "users": [
+    {
+      "username": "teki",
+      "fullname": "aileen tecson",
+      "age": 32,
+      "gender": "Female",
+      "dateRegistered": "2019-01-04T09:42:21"
+    },
+    {
+      "username": "paul",
+      "fullname": "paul macalindong",
+      "age": 43,
+      "gender": "Male",
+      "dateRegistered": "2019-01-04T09:42:51"
+    },
+    {
+      "username": "bryan",
+      "fullname": "bryan ruiz",
+      "age": 45,
+      "gender": "Male",
+      "dateRegistered": "2019-01-04T09:43:18"
+    }
+  ]
+}
+
+ ----------------- 
+
+Response: 
+TimeStamp: 2019-03-01T15:42:28.94+08:00
+
+{
+  "message": "User not found!",
+  "errorCode": 400
+}
+
+ ----------------- 
+
+Response: 
+TimeStamp: 2019-03-01T16:09:29.335+08:00
+
+{
+  "username": "teki",
+  "fullname": "aileen tecson",
+  "age": 32,
+  "gender": "Female",
+  "dateRegistered": "2019-01-04T09:42:21"
+}
+
+ ----------------- 
+
+Response: 
+TimeStamp: 2019-03-01T16:16:28.103+08:00
+
+{
+  "username": "teki",
+  "fullname": "aileen tecson",
+  "age": 32,
+  "gender": "Female",
+  "dateRegistered": "2019-01-04T09:42:21"
+}
+
+ ----------------- 
+
+Response: 
+TimeStamp: 2019-03-01T16:19:42.841+08:00
+
+{
+  "users": [
+    {
+      "username": "teki",
+      "fullname": "aileen tecson",
+      "age": 32,
+      "gender": "Female",
+      "dateRegistered": "2019-01-04T09:42:21"
+    },
+    {
+      "username": "paul",
+      "fullname": "paul macalindong",
+      "age": 43,
+      "gender": "Male",
+      "dateRegistered": "2019-01-04T09:42:51"
+    },
+    {
+      "username": "bryan",
+      "fullname": "bryan ruiz",
+      "age": 45,
+      "gender": "Male",
+      "dateRegistered": "2019-01-04T09:43:18"
+    }
+  ]
+}
+
+ ----------------- 
+
+Response: 
+TimeStamp: 2019-03-01T16:19:43.607+08:00
+
+{
+  "username": "teki",
+  "fullname": "aileen tecson",
+  "age": 32,
+  "gender": "Female",
+  "dateRegistered": "2019-01-04T09:42:21"
+}
+
+ ----------------- 
+
+Response: 
+TimeStamp: 2019-03-01T16:19:43.679+08:00
+
+{
+  "message": "User not found!",
+  "errorCode": 400
+}
+
+ ----------------- 
+
+Response: 
+TimeStamp: 2019-03-01T16:21:14.638+08:00
+
+{
+  "users": [
+    {
+      "username": "teki",
+      "fullname": "aileen tecson",
+      "age": 32,
+      "gender": "Female",
+      "dateRegistered": "2019-01-04T09:42:21"
+    },
+    {
+      "username": "paul",
+      "fullname": "paul macalindong",
+      "age": 43,
+      "gender": "Male",
+      "dateRegistered": "2019-01-04T09:42:51"
+    },
+    {
+      "username": "bryan",
+      "fullname": "bryan ruiz",
+      "age": 45,
+      "gender": "Male",
+      "dateRegistered": "2019-01-04T09:43:18"
+    }
+  ]
+}
+
+ ----------------- 
+
+Response: 
+TimeStamp: 2019-03-01T16:21:15.457+08:00
+
+{
+  "username": "teki",
+  "fullname": "aileen tecson",
+  "age": 32,
+  "gender": "Female",
+  "dateRegistered": "2019-01-04T09:42:21"
+}
+
+ ----------------- 
+
+Response: 
+TimeStamp: 2019-03-01T16:21:15.666+08:00
+
+{
+  "message": "User not found!",
+  "errorCode": 400
+}
+
+ ----------------- 
+
+Response: 
+TimeStamp: 2019-03-01T16:30:29.494+08:00
+
+{
+  "message": "User not found!",
+  "errorCode": 400
+}
+
+ ----------------- 
+
+Response: 
+TimeStamp: 2019-03-01T16:32:47.86+08:00
+
+{
+  "message": "User not found!",
+  "errorCode": 400
+}
+
+ ----------------- 
+
+Response: 
+TimeStamp: 2019-03-01T16:35:47.958+08:00
+
+{
+  "message": "User not found!",
+  "errorCode": 400
+}
+
+ ----------------- 
+
+Response: 
+TimeStamp: 2019-03-01T16:35:48.219+08:00
+
+{
+  "users": [
+    {
+      "username": "teki",
+      "fullname": "aileen tecson",
+      "age": 32,
+      "gender": "Female",
+      "dateRegistered": "2019-01-04T09:42:21"
+    },
+    {
+      "username": "paul",
+      "fullname": "paul macalindong",
+      "age": 43,
+      "gender": "Male",
+      "dateRegistered": "2019-01-04T09:42:51"
+    },
+    {
+      "username": "bryan",
+      "fullname": "bryan ruiz",
+      "age": 45,
+      "gender": "Male",
+      "dateRegistered": "2019-01-04T09:43:18"
+    }
+  ]
+}
+
+ ----------------- 
+
+Response: 
+TimeStamp: 2019-03-01T16:35:48.911+08:00
+
+{
+  "username": "teki",
+  "fullname": "aileen tecson",
+  "age": 32,
+  "gender": "Female",
+  "dateRegistered": "2019-01-04T09:42:21"
+}
+
+ ----------------- 
+
+Response: 
+TimeStamp: 2019-03-01T16:35:49.126+08:00
+
+{
+  "message": "User not found!",
+  "errorCode": 400
+}
+
+ ----------------- 
+
+Response: 
+TimeStamp: 2019-03-01T16:36:56.539+08:00
+
+{
+  "message": "User not found!",
+  "errorCode": 400
+}
+
+ ----------------- 
+
+Response: 
+TimeStamp: 2019-03-01T16:36:57.264+08:00
+
+{
+  "users": [
+    {
+      "username": "teki",
+      "fullname": "aileen tecson",
+      "age": 32,
+      "gender": "Female",
+      "dateRegistered": "2019-01-04T09:42:21"
+    },
+    {
+      "username": "paul",
+      "fullname": "paul macalindong",
+      "age": 43,
+      "gender": "Male",
+      "dateRegistered": "2019-01-04T09:42:51"
+    },
+    {
+      "username": "bryan",
+      "fullname": "bryan ruiz",
+      "age": 45,
+      "gender": "Male",
+      "dateRegistered": "2019-01-04T09:43:18"
+    }
+  ]
+}
+
+ ----------------- 
+
+Response: 
+TimeStamp: 2019-03-01T16:36:57.558+08:00
+
+{
+  "username": "teki",
+  "fullname": "aileen tecson",
+  "age": 32,
+  "gender": "Female",
+  "dateRegistered": "2019-01-04T09:42:21"
+}
+
+ ----------------- 
+
+Response: 
+TimeStamp: 2019-03-01T16:36:57.767+08:00
+
+{
+  "message": "User not found!",
+  "errorCode": 400
+}
+
+ ----------------- 
+
+Response: 
+TimeStamp: 2019-03-01T16:39:24.523+08:00
+
+{
+  "message": "User not found!",
+  "errorCode": 400
+}
+
+ ----------------- 
+
+Response: 
+TimeStamp: 2019-03-01T16:39:25.259+08:00
+
+{
+  "users": [
+    {
+      "username": "teki",
+      "fullname": "aileen tecson",
+      "age": 32,
+      "gender": "Female",
+      "dateRegistered": "2019-01-04T09:42:21"
+    },
+    {
+      "username": "paul",
+      "fullname": "paul macalindong",
+      "age": 43,
+      "gender": "Male",
+      "dateRegistered": "2019-01-04T09:42:51"
+    },
+    {
+      "username": "bryan",
+      "fullname": "bryan ruiz",
+      "age": 45,
+      "gender": "Male",
+      "dateRegistered": "2019-01-04T09:43:18"
+    }
+  ]
+}
+
+ ----------------- 
+
+Response: 
+TimeStamp: 2019-03-01T16:39:25.528+08:00
+
+{
+  "username": "teki",
+  "fullname": "aileen tecson",
+  "age": 32,
+  "gender": "Female",
+  "dateRegistered": "2019-01-04T09:42:21"
+}
+
+ ----------------- 
+
+Response: 
+TimeStamp: 2019-03-01T16:39:25.729+08:00
+
+{
+  "message": "User not found!",
+  "errorCode": 400
+}
+
+ ----------------- 
+
+Response: 
+TimeStamp: 2019-03-01T16:46:20.669+08:00
+
+{
+  "message": "User not found!",
+  "errorCode": 400
+}
+
+ ----------------- 
+
+Response: 
+TimeStamp: 2019-03-01T16:46:21.618+08:00
+
+{
+  "users": [
+    {
+      "username": "teki",
+      "fullname": "aileen tecson",
+      "age": 32,
+      "gender": "Female",
+      "dateRegistered": "2019-01-04T09:42:21"
+    },
+    {
+      "username": "paul",
+      "fullname": "paul macalindong",
+      "age": 43,
+      "gender": "Male",
+      "dateRegistered": "2019-01-04T09:42:51"
+    },
+    {
+      "username": "bryan",
+      "fullname": "bryan ruiz",
+      "age": 45,
+      "gender": "Male",
+      "dateRegistered": "2019-01-04T09:43:18"
+    }
+  ]
+}
+
+ ----------------- 
+
+Response: 
+TimeStamp: 2019-03-01T16:46:21.916+08:00
+
+{
+  "username": "teki",
+  "fullname": "aileen tecson",
+  "age": 32,
+  "gender": "Female",
+  "dateRegistered": "2019-01-04T09:42:21"
+}
+
+ ----------------- 
+
+Response: 
+TimeStamp: 2019-03-01T16:46:22.128+08:00
+
+{
+  "message": "User not found!",
+  "errorCode": 400
+}
+
+ ----------------- 
+
+Response: 
+TimeStamp: 2019-03-01T16:48:17.559+08:00
+
+{
+  "message": "User not found!",
+  "errorCode": 400
+}
+
+ ----------------- 
+
+Response: 
+TimeStamp: 2019-03-01T16:48:18.383+08:00
+
+{
+  "users": [
+    {
+      "username": "teki",
+      "fullname": "aileen tecson",
+      "age": 32,
+      "gender": "Female",
+      "dateRegistered": "2019-01-04T09:42:21"
+    },
+    {
+      "username": "paul",
+      "fullname": "paul macalindong",
+      "age": 43,
+      "gender": "Male",
+      "dateRegistered": "2019-01-04T09:42:51"
+    },
+    {
+      "username": "bryan",
+      "fullname": "bryan ruiz",
+      "age": 45,
+      "gender": "Male",
+      "dateRegistered": "2019-01-04T09:43:18"
+    }
+  ]
+}
+
+ ----------------- 
+
+Response: 
+TimeStamp: 2019-03-01T16:48:18.689+08:00
+
+{
+  "username": "teki",
+  "fullname": "aileen tecson",
+  "age": 32,
+  "gender": "Female",
+  "dateRegistered": "2019-01-04T09:42:21"
+}
+
+ ----------------- 
+
+Response: 
+TimeStamp: 2019-03-01T16:48:18.858+08:00
+
+{
+  "message": "User not found!",
+  "errorCode": 400
+}
+
+ ----------------- 
+
+Response: 
+TimeStamp: 2019-03-01T16:49:22.203+08:00
+
+{
+  "message": "User not found!",
+  "errorCode": 400
+}
+
+ ----------------- 
+
+Response: 
+TimeStamp: 2019-03-01T16:49:23.147+08:00
+
+{
+  "users": [
+    {
+      "username": "teki",
+      "fullname": "aileen tecson",
+      "age": 32,
+      "gender": "Female",
+      "dateRegistered": "2019-01-04T09:42:21"
+    },
+    {
+      "username": "paul",
+      "fullname": "paul macalindong",
+      "age": 43,
+      "gender": "Male",
+      "dateRegistered": "2019-01-04T09:42:51"
+    },
+    {
+      "username": "bryan",
+      "fullname": "bryan ruiz",
+      "age": 45,
+      "gender": "Male",
+      "dateRegistered": "2019-01-04T09:43:18"
+    }
+  ]
+}
+
+ ----------------- 
+
+Response: 
+TimeStamp: 2019-03-01T16:49:23.455+08:00
+
+{
+  "username": "teki",
+  "fullname": "aileen tecson",
+  "age": 32,
+  "gender": "Female",
+  "dateRegistered": "2019-01-04T09:42:21"
+}
+
+ ----------------- 
+
+Response: 
+TimeStamp: 2019-03-01T16:49:23.675+08:00
+
+{
+  "message": "User not found!",
+  "errorCode": 400
+}
+
+ ----------------- 
+
+Response: 
+TimeStamp: 2019-03-01T16:50:52.301+08:00
+
+{
+  "message": "User not found!",
+  "errorCode": 400
+}
+
+ ----------------- 
+
+Response: 
+TimeStamp: 2019-03-01T16:50:53.248+08:00
+
+{
+  "users": [
+    {
+      "username": "teki",
+      "fullname": "aileen tecson",
+      "age": 32,
+      "gender": "Female",
+      "dateRegistered": "2019-01-04T09:42:21"
+    },
+    {
+      "username": "paul",
+      "fullname": "paul macalindong",
+      "age": 43,
+      "gender": "Male",
+      "dateRegistered": "2019-01-04T09:42:51"
+    },
+    {
+      "username": "bryan",
+      "fullname": "bryan ruiz",
+      "age": 45,
+      "gender": "Male",
+      "dateRegistered": "2019-01-04T09:43:18"
+    }
+  ]
+}
+
+ ----------------- 
+
+Response: 
+TimeStamp: 2019-03-01T16:50:53.559+08:00
+
+{
+  "username": "teki",
+  "fullname": "aileen tecson",
+  "age": 32,
+  "gender": "Female",
+  "dateRegistered": "2019-01-04T09:42:21"
+}
+
+ ----------------- 
+
+Response: 
+TimeStamp: 2019-03-01T16:50:53.75+08:00
+
+{
+  "message": "User not found!",
+  "errorCode": 400
+}
+
+ ----------------- 
+

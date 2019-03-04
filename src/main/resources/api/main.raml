@@ -1,0 +1,37 @@
+#%RAML 1.0
+title: Machine Problem
+version: v1
+
+traits:
+  header: !include traits/header.raml
+  
+types:
+   GetUsers: !include schemas/get-users.raml
+   UserObject: !include schemas/user-object.raml
+
+resourceTypes:
+  UserCollection: !include resourcetypes/user-collection.raml
+
+/users:
+  type:
+    UserCollection:
+      error-schema: !include schemas/error.raml
+      error-example: !include examples/error.json
+  get:
+    is: [header]
+    responses:
+      200:
+        body:
+          application/json:
+            type: GetUsers
+            example: !include examples/get-users.json
+  /{username}:
+    get:
+      is: [header]
+      responses: 
+        200:
+          body:
+            application/json:
+              type: UserObject
+              example: !include examples/user-object.json
+            
