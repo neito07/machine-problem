@@ -5,6 +5,7 @@ Once you imported the project in anypoint studio, you need to update the followi
   * user: "<mailer_email>" 
   * password: "<mailer_password>" 
   * recepient: "<recepient_mail>"
+  * file.file-destination: "<local_machine_path>"
   
 Do note that the send email will only work if the 587 port of the gmail smtp configuration is not blocked within your network.
 
